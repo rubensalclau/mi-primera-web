@@ -1,16 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi primera web</title>
+  <meta charset="UTF-8">
+  <title>AUTOS RUAN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0f0f0f;
+      color: white;
+    }
+
+    header {
+      background: black;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to bottom, #000, #111);
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #aaa;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #bfa046;
+      color: black;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .cars {
+      padding: 40px 20px;
+    }
+
+    .cars h3 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h4 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      color: #bbb;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: black;
+      border-top: 1px solid #333;
+      margin-top: 40px;
+    }
+  </style>
 </head>
-<body style="font-family: Arial; text-align: center; margin-top: 50px;">
 
-  <h1>🔥 Web creada por Rubén </h1>
-  <p>Esto ya es una web real subida a internet.</p>
+<body>
 
-  <button onclick="alert('Vamos socio 🚀')">
-    Haz clic
+<header>
+  <h1>AUTOS RUAN</h1>
+</header>
+
+<section class="hero">
+  <h2>Encuentra tu próximo coche</h2>
+  <p>Vehículos seleccionados con garantía y confianza</p>
+  <button class="btn" onclick="alert('Contacto próximamente')">
+    Ver vehículos
   </button>
+</section>
+
+<section class="cars">
+  <h3>Vehículos disponibles</h3>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt="">
+      <h4>BMW Serie 3</h4>
+      <p>Diesel · 2019 · 45.000 km</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1555215695-3004980ad54c" alt="">
+      <h4>Audi A4</h4>
+      <p>Gasolina · 2020 · 30.000 km</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a" alt="">
+      <h4>Mercedes Clase C</h4>
+      <p>Diesel · 2018 · 60.000 km</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 AUTOS RUAN · Todos los derechos reservados</p>
+</footer>
 
 </body>
 </html>
